@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  LF2:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Description: A starter AWS Lambda function.
+      Handler: lambda_function.lambda_handler
+      MemorySize: 128
+      Role: 'arn:aws:iam::677041989318:role/lambda_basic_execution'
+      Runtime: python3.6
+      Timeout: 3
