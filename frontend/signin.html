@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <style>
+      .button {
+       background-color: darkgreen;
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       font-weight: bold;
+       margin: 4px 2px;
+       cursor: pointer;
+      }
+     </style>
+     <script>
+     function cognito() {
+         window.location.href="https://mychatbot.auth.us-east-2.amazoncognito.com/login?response_type=code&client_id=euc2cq5tku252be5shntj4qra&redirect_uri=https://s3.us-east-2.amazonaws.com/chat-bot-webpage/chatbot.html";
+     }
+     </script>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>DINNER PLANNER BOT</title>
+
+     <script src="Java/jquery-3.3.1.js"></script>
+     <script src="Java/ccbd/signin.js"></script>
+   </head>
+
+   <body style="background-color:powderblue;">
+     <h1 style="color: darkblue; text-align: center; font-family:impact"><b>THE ULTIMATE DINNER PLANNER</b></h1>
+       <hr>
+
+
+    <form id="signin">
+      <fieldset style="color: indigo; font-family:verdana; text-align: center">
+        <br><b>PLEASE SIGN IN TO CONTINUE</b><br><br><br>
+        <input type="button" class="button" id="sigin" value="SIGN IN" onclick="cognito()">
+      </fieldset>
+    </form>
+    <hr>
+
+
+ </body>
+</html>

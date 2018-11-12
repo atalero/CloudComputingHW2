@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>DINNER PLANNER BOT</title>
+
+     <script src="Java/jquery-3.3.1.js"></script>
+     <script src="Java/ccbd/main.js"></script>
+<!--     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+     <script src="dist/amazon-cognito-auth.min.js"></script>
+     <script src="https://amazon-cognito-assets.us-east-1.amazoncognito.com/amazon-cognito-advanced-security-data.min.js"></script>
+-->
+     <style>
+      div.sticky {
+        position: sticky;
+        top: 0;
+        padding: 15px;
+      }
+     </style>
+   </head>
+
+   <body style="background-color:powderblue;">
+     <div id="headr" class="sticky" style="background-color:powderblue;">
+       <h1 style="color: darkblue; text-align: center; font-family:impact"><b>THE ULTIMATE DINNER PLANNER</b></h1>
+        <hr>
+      </div>
+
+      <div id="conv">
+        <form id="conversation">
+          <fieldset style="background-color:lavender; color: indigo; font-family:verdana;">
+            <legend style="color: indigo; font-family:impact;"><b>CHATBOT</b></legend>
+            <b><i>Welcome to my webpage! Let's chat....</i></b>
+          </fieldset>
+        </form>
+        <hr>
+
+        <form id="userinp">
+          <p><input type="text" id="chat" size="150" required oninvalid="this.setCustomValidity(' ')" placeholder="Your input here..."></p>
+          <button id="submit" style="display:none">Submit!</button>
+        </form>
+      </div>
+
+ </body>
+</html>
