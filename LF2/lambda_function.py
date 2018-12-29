@@ -1,7 +1,7 @@
 from __future__ import print_function
 import json, urllib, requests, datetime, boto3, re, logging
 
-API_KEY = "AIzaSyCzojnMKr_DT4tXG3VuDMNo8HeUvYoByuY"
+API_KEY = ""
 #url for the text search Google API
 TEXT_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
 
